@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!-- El sistema de grid de Bootstrap divide la pantalla en 12 columnas. 
+    Se utiliza para crear diseños responsivos, asignando a los elementos 
+    cuántas columnas ocuparán en diferentes tamaños de pantalla, como móvil, tablet o escritorio. -->
+
+  <div class="container"></div>  
+  <!-- Cuando nosotros colocamos divs dentro de un div clase "row"   divide la cantidad de divs en cantidad de columnas -->
+  <div class="row">
+        <div class="col border">1</div>
+        <div class="col border">2</div>
+        <div class="col border">3</div>
+        <div class="col border">4</div>
+        <div class="col border">5</div>
+        <div class="col border">6</div>
+        <div class="col border">7</div>
+        <div class="col border">8</div>
+        <div class="col border">9</div>
+        <div class="col border">10</div>
+        <div class="col border">11</div>
+        <div class="col border">12</div>
+    </div>
+    <!-- Podemos elegir cuantas columnas queremos que ocupe el element -->
+    <div class="row">
+        <div class="col-6 border">A</div>
+        <div class="col-3 border">B</div>
+        <div class="col-3 border">C</div>
+    </div>
+    <!--    Si nos pasamos del numero de columnas que debe ocupar los siguientes divs se colocan debajo-->
+    <div class="row">
+        <div class="col-6 border">1C</div>
+        <div class="col-5 border">2B</div>
+        <div class="col-7 border">3E</div>
+        <div class="col-6 border">4F</div>
+        <div class="col-8 border">5G</div>
+
+    </div>
+    <!-- pordemos elegir dependiendo del tamaño de la pantalla cuantas columnas queremos que ocupe el elemento
+     boostrap grid se divide por 
+     x-small xs <= 576px, 
+     small sm <= 768px,
+     medium md <= 992px,
+     large xl <= 1200px,
+     extra large xxl <= 1400px -->
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, obcaecati at debitis tempora, nobis tenetur vel expedita quia vitae numquam quis hic fuga culpa dolorum. Saepe expedita officia aut iusto!</div>
+        <div class="col-12 col-md-6 col-lg-3 border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat impedit rem, consequatur nostrum veniam quam explicabo ut aperiam sunt voluptatem. Odit ab voluptatum ipsa minus minima veniam ea quae?</div>
+        <div class="col-12 col-md-6 col-lg-3 border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat impedit rem, consequatur nostrum veniam quam explicabo ut aperiam sunt voluptatem. Odit ab voluptatum ipsa minus minima veniam ea quae?</div>
+        <div class="col-12 col-md-6 col-lg-3 border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nemo non quibusdam molestiae. Vero ducimus autem est sit impedit, accusantium eos consequuntur eveniet, porro earum quo explicabo, consectetur molestiae et.</div>
+    </div>
+</body>
+</html>
